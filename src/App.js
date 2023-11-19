@@ -51,10 +51,7 @@ function App() {
     console.log('Total vol = wall + base =', totalMetalVolume);
     console.log(
       'inner volume to metal volume ratio: ',
-      innerToMetalRatio,
-      'i.e. pot contents is',
-      percentRatio,
-      '% '
+      innerToMetalRatio
     );
     console.groupEnd();
 
