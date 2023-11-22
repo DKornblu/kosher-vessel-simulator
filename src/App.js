@@ -68,7 +68,7 @@ function App() {
   // }, [height, diameter, thickness])
 
   return (
-    <ChakraProvider>
+    // <ChakraProvider>
       <div className="App">
         <div className="input-container">
           <form className="dimensions" onSubmit={handleSubmit}>
@@ -106,7 +106,8 @@ function App() {
         </div>
 
         <div>
-          {isLoading ? (
+          {isLoading ? <>Loading</> : null}
+          {/* {isLoading ? (
             <Spinner
               thickness="4px"
               speed="0.65s"
@@ -114,7 +115,7 @@ function App() {
               color="blue.500"
               size="xl"
             />
-          ) : null}
+          ) : null} */}
         </div>
 
         <div className="result-container">
@@ -122,7 +123,7 @@ function App() {
           <>{result}</>
         </div>
       </div>
-    </ChakraProvider>
+    // </ChakraProvider>
   );
 }
 
